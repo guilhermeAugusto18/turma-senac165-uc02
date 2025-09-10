@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>formularios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label for="nome">seu nome completo:</label>
+        <input type="text" name="nome_do_campo" placeholder="nome_completo" id="nome" maxlength="20" minlength="2">
+        <br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+        <br>
+        <label for="pais">Pais de origem:</label>
+        <select name="pais" id="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="EUA">EUA</option>
+            <option value="Canada">Canada</option>
+            <option value="Japao">Japao</option>
+            <option value="Alemanha">Alemanha</option>
+        </select>
+        <br>
+        <input type="checkbox" id="laranja" name="frutas" value="laranja">
+        <label for="laranja">Laranja</label>
+        <br>
+        <input type="checkbox" id="banana" name="frutas" value="banana">
+        <label for="banana">Banana</label>
+        <br>
+    </body>
+</html>

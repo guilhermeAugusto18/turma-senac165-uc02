@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>minilição</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>formulario de viagem</h1>
+        <hr>
+        <fieldset>
+            <legend>informações pessoais</legend>
+        <label for="nome">Nome:</label> 
+        <input type="text" name="nome_completo" placeholder="Nome" id="nome" maxlength="20" minlength="1">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="e-mail" placeholder="E-mail" id="email" maxlength="30" minlength="1">
+        <br>
+        <label for="genero">Genero:</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="outro" value="outro">
+        <label for="outro">Outro</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>selecione seu destino</legend>
+        <label for="destino">selecione seu destino</label>
+        <select name="destino" id="destino">
+            <option value="selecione">selecione</option>
+            <option value="selecione">selecione</option>
+            <option value="selecione">selecione</option>
+            <option value="selecione">selecione</option>
+        </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>selecione suas preferencias</legend>
+        <legend>preferencias:</legend>
+        <input type="checkbox" id="Aventura" name="preferencia" value="Aventura" placeholder="Aventura">
+        <label for="Aventura">aventura</label>
+        <input type="checkbox" id="praia" name="preferencia" value="praia" placeholder="praia">
+        <label for="praia">Praia</label>
+        <input type="checkbox" id="cultura" name="preferencia" value="cultura" placeholder="cultura">
+        <label for="cultura">Cultura</label>
+        <br>
+        </fieldset>
+        <label for="complemento">Mensagem:</label>
+        <textarea name="campo_de_texto" id="complemento" maxlength="200" minlength="1" rows="5" cols="50"></textarea>
+        <br>
+        <input type="reset" value="voltar">
+        <input type="submit" value="enviar">
+    </body>
+</html>
