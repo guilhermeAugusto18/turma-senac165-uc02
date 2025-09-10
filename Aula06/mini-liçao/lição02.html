@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lição02</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Cadastro:</h1>
+        <form>
+            <fieldset>
+                <legend>informações pessoais</legend>
+                <br>
+                <input type="text" name="nome" placeholder="nomeCompleto" id="nomec" minlength="1" maxlength="50">
+                <label for="nomec">Nome Completo</label>
+                <br>
+                <input type="text" name="email" placeholder="E-mail" id="email" minlength="1" maxlength="50">
+                <label for="email">endereço de E-mail</label>
+                <br>
+                <input type="Date" name="aniversario" placeholder="dtNascimento" id="dtnasc">
+                <label for="dtnasc">Data de nascimento</label>
+                <br>
+                <input type="radio" name="genero" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="outro" value="outro">
+                <label for="outro">Outro</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Endereço e contato:</legend>
+                <input type="text" name="telefone" placeholder="telefone" id="tel" minlength="6" maxlength="12">
+                <label for="tel">Telefone:</label>
+                <br>
+                <input type="text" name="endereço" placeholder="endereço" id="addr" minlength="1" maxlength="20">
+                <label for="addr">Endereço pessoal:</label>
+                <br>
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                <option value="estado1">RN</option>
+                <option value="estado2">RN</option>
+                <option value="estado3">RN</option>
+                <option value="estado4">RN</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <input type="text" name="senha" placeholder="senha" id="senha" minlength="8" maxlength="999">
+                <label for="senha">Digite a senha:</label>
+                <br>
+                <input type="text" name="confirmação" placeholder="confirmação" id="confirm" minlength="8" maxlength="999">
+                <label for="confirm">Confirme a senha:</label>
+                <br>
+            </fieldset>
+            <input type="submit" value="enviar">
+            <input type="reset" value="voltar">
+        </form>
+        <a href="login.html">ja tem cadastro?</a>
+
+    </body>
+</html>
