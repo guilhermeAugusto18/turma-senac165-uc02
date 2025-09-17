@@ -1,0 +1,9 @@
+    .bloco-inline{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 100px;
+            padding: 100px;
+            vertical-align: bottom;
+        }

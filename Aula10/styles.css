@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 9.375rem 1fr 9.375rem;
+    grid-template-rows: 5rem 1fr 9.375rem;
+    grid-template-areas: 
+    "header header header"
+    "asideleft main asideright"
+    "footer footer footer";
+    height: 100rem;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(70, 55, 34);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(23, 71, 23);
+}
+
+
+.left{
+    grid-area: asideleft;
+    background-color: darkorange;
+}
+
+.right{
+    grid-area: asideright;
+    background-color: darkgrey;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(211, 181, 145);
+}

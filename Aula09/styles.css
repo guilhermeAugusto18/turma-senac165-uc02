@@ -1,0 +1,25 @@
+body{
+    width: 100vw;
+    height: 100vw;
+    
+}
+div {
+    background-color: blue;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+}
+
+.pixel{
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+
+.rottipografica{
+    font: 1.25em verdana, arial, tahoma, sans-serif;
+}
+
+.roottipografica2{
+    font: 2rem verdana, arial, tahoma, sans-serif;
+}
+
+
