@@ -1,0 +1,18 @@
+.flex-container{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+    height: 10rem;
+    align-items:flex-start;
+}
+
+.item{
+    background-color: burlywood;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    width: 5rem;
+    text-align: center;
+}

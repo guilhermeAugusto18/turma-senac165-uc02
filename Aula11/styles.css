@@ -1,0 +1,61 @@
+:root{
+    --cor-primaria: rgb(192, 44, 18);
+    --font-corpo: "montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-corpo);
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    padding: 3rem;
+    color: var(--cor-primaria)
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(56, 146, 148, 1) 15%, rgba(45, 105, 70, 1) 50%, rgba(125, 71, 172, 1) 63%, rgba(115, 57, 96, 1) 80%, rgba(170, 131, 136, 1) 89%, rgba(237, 221, 83, 1) 100%);
+    gap: 2rem;
+    place-content: center;
+}
+
+section{
+    background-color: azure;
+    height: 28rem;
+    width: 22rem;
+    padding:2rem;
+    border-radius: 1rem;
+}
+
+img{
+    width: 19rem;
+    height: 21rem;
+    object-fit: contain;
+}
+
+h3{
+    text-transform: capitalize;
+
+}
+
+button{
+    background-color: var(--cor-primaria);
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5 rem;
+    color:darkgoldenrod;
+}
