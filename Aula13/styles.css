@@ -29,25 +29,27 @@ header{
 nav{
     border-radius: 1rem;
     text-align: center;
-    padding: 3rem;
+    padding: 5rem;
     background-color: var(--cor-nav);
 }
 
 main{
+    flex: 1;
     border-radius: 1rem;
     text-align: center;
-    padding: 10rem;
+    padding: 3rem;
     background-color: var(--cor-main);
 }
 
 aside{
     border-radius: 1rem;
     text-align: center;
-    padding: 3rem;
+    padding: 5rem;
     background-color: var(--cor-aside);
 }
 
 footer{
+    flex: 1;
     margin: 1rem;
     border-radius: 1rem;
     text-align: center;
@@ -64,6 +66,7 @@ footer{
 }
 
 .section{
+    gap: 2rem;
     display: flex;
     justify-content:space-evenly;
     height: 100vh;
