@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+.button01{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.button1:hover{
+    background-color: chocolate;
+}
+
+@keyframes mover{
+    from{transform: translateX(0);}
+    to{transform: translateX(12.5rem);}
+}
+
+.box{
+    width: 6.25;
+    height: 6.25;
+    background-color: gold;
+    transition: transform 0.5 ease-in-out;
+}
+
+.box:hover{
+    transform: scale(5.0);
+}
+
+.box02{
+    background-color: forestgreen;
+    height: 7.0;
+    width: 7.0;
+    animation: mover 2s infinite alternate;
+}
+
+.circle{
+    width: 10rem;
+    height: 15rem;
+    background-color: deeppink;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(3.0);}
+}
+
+.carrinho{
+    margin-top: 4rem;
+    width: 9.75rem;
+    height: 11rem;
+    background-color: black;
+    border-radius: 1rem;
+    position: relative;
+    animation: movercarrinho 3s linear infinite alternate;
+    animation: curva 3s infinite alternate
+}
+
+.carrinho::before, .carrinho::after{
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.65rem;
+}
+
+.carrinho::before{
+    left: 0.65rem;
+}
+
+.carrinho::after{
+    right: 0.65rem;
+}
+
+@keyframes movercarrinho{
+    0% {transform: translateX(0);}
+    50% {transform: translateX(18.75rem);}
+    100% {transform: translatey(10rem);}
+}
+
+@keyframes curva{
+    0% {transform: translatex(0) rotateY(0deg);}
+    20% {transform: translatex(-200px) rotateY(0deg);}
+    40% {transform: translatex(-200px) rotateY(180deg);}
+    60% {transform: translatex(-200px) rotateY(180deg);}
+    100% {transform: translateX(0) rotateY(0deg)}
+}
