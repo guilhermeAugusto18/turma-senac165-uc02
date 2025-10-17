@@ -1,9 +1,17 @@
-let chico = 1.50;
-let ze = 1.10;
-let ano = 0;
-do{
-    chico += 0.02;
-    ze += 0.03;
-    ano += 1;
-} while(chico > ze);
-console.log(`vai demorar ${ano} anos ate ze ficar maior que chico`);
+let array = [1, "tres", false, {chave:"valor"}];
+
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+console.log(array[3]);
+console.log(array.length);
+
+array.unshift();
+array.push();
+array.shift();
+array.pop();
+
+const array02 = [3, 5, 6, 90];
+
+const map01 = array02.map((x)=> x * 2);
+console.log(map01);
