@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BuscarCEP from "../../components/BuscarCEP/BuscarCEP";
+import ControleAgua from "../../components/AlertaHidratacao/AlertaHidratacao";
 
 export default function Home(){
     const [cep, setcep] = useState("");
@@ -44,6 +45,7 @@ export default function Home(){
             uf={dadosendereco.uf}
             localidade={dadosendereco.localidade}/>
         }
-        </>
+    <ControleAgua />   
+    </>
     )
 }
